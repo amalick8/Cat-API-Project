@@ -1,16 +1,50 @@
-# React + Vite
+# 🐾 Veni Vici – Cat Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, lightweight React app that lets users discover random cat breeds with images and key facts.  
+Each click of the **Discover** button reveals a new cat with its breed name, origin, life span, and temperament.
 
-Currently, two official plugins are available:
+Users can click attributes to add them to a **ban list**, filtering out future results that match.  
+The ban list appears below the cat info and can be updated by clicking any banned item to remove it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetches random cat data using `async/await`
+- Displays one cat image and three or more attributes per call
+- Consistent attributes across all API calls
+- Single result shown at a time
+- Randomized API responses for each click
+- Clickable attributes that add to or remove from a **ban list**
+- Ban list filters out matching results from future fetches
+- Clean, desktop-friendly UI with soft colors and centered layout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 How It Works
+
+1. Click **Discover** to fetch a random cat breed from the Cat API.  
+2. View:
+   - 🐈 Image  
+   - 🏷️ Breed Name  
+   - 🌍 Origin  
+   - ⏳ Life Span  
+   - 💡 Temperament  
+3. Click on an attribute (like *Origin* or *Breed*) to add it to the ban list.  
+4. The ban list updates live and prevents future results from showing the banned values.  
+5. Click any banned item to remove it and allow it again.
+
+---
+
+## 🧰 Technologies
+
+- **React (Vite)**
+- **JavaScript (ES6)**
+- **HTML / CSS**
+- **The Cat API**
+
+---
+
+## 🔗 API Reference
+
+**Endpoint**  
